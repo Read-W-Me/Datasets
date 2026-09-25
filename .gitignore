@@ -1,0 +1,13 @@
+# Ignore downloaded raw data and archives
+raw_data/
+data/
+*.csv
+*.zip
+
+# Ignore generated EDA plots
+*.png
+*.jpg
+
+# Ignore Python cache
+__pycache__/
+*.pyc
