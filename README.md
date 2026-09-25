@@ -15,7 +15,7 @@ When integrating a new dataset into the project, provide a download script rathe
    - Downloads the dataset from its source (Zenodo, PhysioNet, Kaggle, etc.).
    - Extracts the files into a local `/raw_data` folder.
    - Generates a quick Exploratory Data Analysis (EDA) plot to verify the data structure.
-3. **Crucial:** Add a `.gitignore` file inside your dataset folder containing `raw_data/` to ensure the downloaded files never get staged.
+3. **Data Protection:** Always extract your files into a folder named `raw_data/` or `data/`. The global `.gitignore` at the root of this repository is configured to automatically block those directories (along with all `.csv` and `.zip` files) to ensure they never accidentally get staged.
 4. Update the **Dataset Metadata Registry** below.
 5. Commit and push the script.
 
